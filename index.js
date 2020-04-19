@@ -15,23 +15,23 @@
     daysRemaining +
     "</span>";
 
-  document
-    .querySelector(".js-share button")
-    .addEventListener("click", function () {
-      copyToClipboard(location.href);
-      document.querySelector(".js-share p").innerHTML =
-        "L'URL de cette page a été copiée dans votre presse-papier !";
-    });
+  // document
+  //   .querySelector(".js-share button")
+  //   .addEventListener("click", function () {
+  //     copyToClipboard(location.href);
+  //     document.querySelector(".js-share p").innerHTML =
+  //       "L'URL de cette page a été copiée dans votre presse-papier !";
+  //   });
 
-  function copyToClipboard(str) {
-    var el = document.createElement("textarea");
-    el.value = str;
-    el.setAttribute("readonly", "");
-    el.style.position = "absolute";
-    el.style.left = "-9999px";
-    document.body.appendChild(el);
-    el.select();
-    document.execCommand("copy");
-    document.body.removeChild(el);
-  }
+  // function copyToClipboard(str) {
+  //   var el = document.createElement("textarea");
+  //   el.value = str;
+  //   el.setAttribute("readonly", "");
+  //   el.style.position = "absolute";
+  //   el.style.left = "-9999px";
+  //   document.body.appendChild(el);
+  //   el.select();
+  //   document.execCommand("copy");
+  //   document.body.removeChild(el);
+  // }
 })();
