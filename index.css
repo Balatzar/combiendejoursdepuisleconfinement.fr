@@ -38,19 +38,73 @@
   margin: 0;
 }
 
-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body {
+  /*background-image: url("https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80");
+    backdrop-filter: blur(8px);*/
   height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto";
+  color: #0d0751;
+}
+
+#background {
+  background-image: url("./assets/photo-1502602898657-3e91760cbb34.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  min-width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.button-box {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.button-box:hover {
+  width: 300%;
+  text-align: right;
+}
+
+button {
+  cursor: pointer;
+  background-color: #ffffff;
+  padding: 5px;
+  border: 0px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-text {
   font-size: 30px;
-  font-family: "Roboto";
   text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .days-since {
-  font-size: 50px;
+  font-size: 130px;
+}
+
+.secondary-text {
+  font-size: 20px;
+  text-align: center;
+}
+
+.days-remain {
+  font-size: 20px;
+  font-weight: bold;
 }
