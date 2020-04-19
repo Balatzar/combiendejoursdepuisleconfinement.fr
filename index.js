@@ -11,7 +11,7 @@
     ((new Date() - new Date("2020/05/11")) / 1000 / 60 / 60 / 24) * -1
   );
   document.querySelector(".js-displaySecondaryText").innerHTML =
-    "Jours de confinement prévus : <span class='days-remain'>" +
+    "Jours de confinement à venir : <span class='days-remain'>" +
     daysRemaining +
     "</span>";
 
